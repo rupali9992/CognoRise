@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="content" content="width=device-width, initial-sclale=1.0, maximum-scale=1.0 user-scaleble=0">
+  <title>MyPortfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+  <div class="header ">
+    <nav class="navbar navbar-expand-lg position-fixed ">
+      <div class="container-fluid ">
+        <h2 class=" pt-3 nav-name ">
+          <span>Port</span>folio.
+        </h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav pe-4  fw-bolder me-5">
+            <li class="nav-item">
+              <a class="nav-link active active-text pe-4 fw-bold " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white pe-4" href="#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white pe-4" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white pe-4" href="#contact-us"> Contact Us</a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white pe-4" href="#">Resume</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid ms-5" >
+      <div class="row">
+        <!-- <div class="col-xl-6 col-sm-12 self-img text-center" >
+      <img src="images/mahajan-img1.jpeg" class="img-fluid" alt="">
+     </div> -->
+        <div class="col-xl-8 col-sm-12 header-column ">
+
+          <div class="header-text">
+            <h1 class="fw-bold">Hi! I'm <span>Rupali Mahajan</span></h1>
+            <div class="change-text ">
+              <p>and I'm </p>
+              <ul class=" list-unstyled">
+                <li><span class="type">Frontend developer</span></li>
+            </div>
+            <p class="change-text-para">Hi there! I'm a friendly UI/UX Web Developer who loves making websites look
+              great and work smoothly. I enjoy mixing creative design with technical skills to build website that are
+              both pretty and easy to use.</p>
+
+          </div>
+          <div class="btn-box">
+            <button class="btn text-center"><a href="rupali-mahajan-resume1[1].pdf">Download CV</a></button>
+            <button class="btn"><a href="#">Contact</a></button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="about-us">
+    <div class="container-fluid section-1">
+      <div class="row about-me ms-5" data-aos="zoom-in-right">
+        <div class="col-xl-7 col-sm-12 first-tab">
+          <h4>My Intro</h4>
+          <h2>About Me</h2>
+          <p class="fw-medium"> hii, i'am Rupali Mahajan,and I graduated from the University of SNDT in 2019 with a
+            degree in Bachelor of Computer Application and i'am currently completed my post graduated from SNDT IN 2022
+            with MCA. My interests are in Front End Engineering, and I love to create beautiful and performant products
+            with delightful user experiences.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('about-me')">about-me</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+          </div>
+          <div class="tab-contents active-tab" id="about-me">
+
+            <h5><i class="fa-solid fa-user"></i> <strong>Name :</strong> Rupali Mahajan</h5>
+            <h5><i class="fa-solid fa-envelope"></i> <strong>Email :</strong>rupalimahajan9992@gmail.com</h5>
+            <h3>My Interests</h3>
+            <ul class="d-flex p-0">
+              <li><i class="fa-solid fa-palette"></i>Drawing</li>
+              <li><i class="fa-solid fa-paintbrush"></i>Painting</li>
+              <li><i class="fa-solid fa-van-shuttle"></i>travel</li>
+              <li><i class="fa-solid fa-headphones"></i>Music</li>
+            </ul>
+
+          </div>
+
+          <div class="tab-contents" id="skills">
+            <ul class="p-0">
+              <li><strong>UI/UX Designer</strong><br>creating and improving the user interface and overall user
+                experience </li>
+              <li><strong>Frontend developer</strong><br> front-end portion of websites and web applications</li>
+              <li><strong>web developer</strong> <br>Website and software application designing, building, or
+                maintaining.</li>
+            </ul>
+
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul class="p-0">
+              <li><strong>2019</strong><br>Bachelor of computer Application (BCA)</li>
+              <li><strong>2022</strong><br>Master of computer Application(MCA)</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-xl-5 col-sm-12 about-me-img">
+          <img src="images/-b9yRN_qrcode.png" class="img-fluid" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid section-2 " data-aos="fade-in-left" id="skills">
+    <div class="row">
+      <h1 class="text-center pb-5 pt-5">My Skills</h1>
+
+      <div class="col-xl-3 col-sm-6 p-4 skill ">
+        <img src="HTML5.png" class="img-fluid" alt="">
+
+      </div>
+
+      <div class="col-xl-3 col-sm-6 p-4 skill">
+        <img src="images/css-logo.png" class="img-fluid" alt="">
+      </div>
+
+
+      <div class="col-xl-3 col-sm-6 skill p-4">
+
+        <img src="images/js1.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-xl-3 col-sm-6 skill p-4">
+        <img src="images/bootstrap.png" class="img-fluid" alt="">
+        <p class="text-center mb-4">bootstrap</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="project text-center section-3" id="projects">
+    <h1 class="fw-bold MyPortfolio">All Projects</h1>
+    <div class="project-button d-flex">
+      <button class="btn mt-5 btn-links active-project" id="showAll">All</button>
+      <button class="btn mt-5 btn-links" id="showProject2">HTML</button>
+      <button class="btn mt-5 btn-links" id="showProject1">Javascript</button>
+      <button class="btn mt-5 btn-links" id="showProject3">Bootstrap</button>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid mt-5 mb-5  ">
+    <div class="row project-section">
+      <div class="col-xl-4 col-sm-6 js-project project" id="project1">
+        <div class="card-imgs text-white" data-aos="flip-left">
+          <img src="images/Celsius-to-Fahrenheit-conversion.jpg" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">Celsius-to-Fahrenheit-Converter</h5>
+            <a href=" https://weather-calculation.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 js-project project" id="project1">
+        <div class="card-imgs text-white" data-aos="flip-left">
+          <img src="images/calculator1.jpg" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">Calculator</h5>
+            <a href="https://calculator-numbers.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 work-list js-project project" data-aos="flip-right" id="project1">
+        <div class="card-imgs text-white">
+          <img src="images/ppf-calculator.jpeg" class="card-img" alt="...">
+          <div class="text">
+            <h5 class="title">ppf-calculator</h5>
+            <a href=" https://ppf-calcy.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 js-project project" id="project1">
+        <div class="card-imgs text-white" data-aos="flip-right">
+          <img src="images/cinema-ticket-booking2.jpg" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">online-tickets-booking</h5>
+            <a href="https://ticket-booking-online.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 js-project project" data-aos="flip-right" id="project1">
+        <div class="card-imgs text-white">
+          <img src="images/Home-Loan-EMI-Calculator-1.webp" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">EMI-calculator</h5>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-4 col-sm-6 work-list js-project project" data-aos="zoom-in-down" id="project1">
+        <div class="card-imgs text-white">
+          <img src="images/Discount-calculators.png" class="card-img" alt="...">
+          <div class="text">
+            <h5 class="title">Discount claculator</h5>
+            <a href=" https://discount-calcy.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 js-project project " id="project1">
+        <div class="card-imgs text-white" data-aos="zoom-in-down">
+          <img src="images/simple-interest-calculator1.png" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">Simple-interest-calculator</h5>
+            <a href="https://simpleinterestcalcy.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 work-list html-project project" id="project2" data-aos="flip-left">
+        <div class="card-imgs text-white">
+          <img src="images/forms1.jpg" class="card-img" alt="...">
+          <div class="text">
+            <h5 class="title">All forms</h5>
+            <a href="https://all-forms.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 html-project project" id="project2">
+        <div class="card-imgs text-white active-all-project" data-aos="flip-left">
+          <img src="images/shoper-stop.webp" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">ShoperStop</h5>
+            <a href="https://legendary-arithmetic-ff953c.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6  html-project project" id="project2" data-aos="flip-left">
+        <div class="card-imgs text-white">
+          <img src="images/parralax.png" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">Parallax Effect</h5>
+            <a href="https://parallax-img-text.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 work-list  html-project project" id="project2" data-aos="flip-right">
+        <div class="card-imgs text-white">
+          <img src="images/CHOICE1.jpg" class="card-img" alt="...">
+          <div class="text">
+            <h5 class="title">Choice-tech Lab</h5>
+            <a href="https://choice-tech-lab.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 html-project project" id="project2">
+        <div class="card-imgs text-white  html-project" data-aos="flip-right">
+          <img src="images/online shopping.jpeg" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">online-shop</h5>
+            <a href="https://gorgeous-muffin-93e732.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 html-project project" id="project2" data-aos="flip-right">
+        <div class="card-imgs text-white">
+          <img src="images/eshop.png" class="card-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">E-HOME/Shopper</h5>
+            <a href="https://poetic-swan-48f6db.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 html-project project" id="project2" data-aos="flip-right">
+        <div class="card-imgs text-white">
+          <img src="images/sixteen-clothing1.jpg" class="card-img" alt="..." style="overflow: hidden;">
+          <div class="text text-white">
+            <h5 class="title">sixteen-clothing Sale</h5>
+            <a href="https://sixteenclothing-web.netlify.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 html-project project" id="project2" data-aos="flip-right">
+        <div class="card-imgs text-white">
+          <img src="images/Ontel1.jpg" class="card-img ontel-img" alt="...">
+          <div class="text text-white">
+            <h5 class="title">Ontel design studio</h5>
+            <a href="https://ontel.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container pt-5 contact-form" id="contact-us">
+    <div class="contact-me">
+      <h1 class="fw-bold text-center pt-5 pb-5">Contact Us</h1>
+    </div>
+    <div class=" row contact-us" data-aos="flip-right">
+      <div class="col-xl-6 col-sm-12">
+        <div class="name text-center">
+          <input type="text" id="name" name="name" required placeholder="NAME" autocomplete="off">
+
+        </div>
+        <div class="email text-center">
+          <input type="email" id="email" name="email" required placeholder="EMAIL" autocomplete="off">
+
+        </div>
+        <div class="message text-center">
+          <input type="text" id="Message" name="message" required placeholder="MESSAGE" autocomplete="off">
+
+        </div>
+        <div class="send-btn text-center mb-5">
+          <button class="btn text-center btn-success">Send</button>
+        </div>
+
+      </div>
+      <div class="col-xl-6 col-sm-12 contact-icon-info">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i></li>
+            <li>Badlapur,Mumbai</li>
+          </ul>
+        </div>
+        <div class="contact-mob">
+          <ul>
+            <li><i class="fa-solid fa-phone-volume"></i></li>
+            <li>+91 7977163020</li>
+          </ul>
+        </div>
+        <div class="contact-email">
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li>rupalimahajan9992@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contact-icon">
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('.type', {
+
+      strings: ['Front-end Developer', 'UI/UX Developer', 'Web Developer'],
+      typeSpeed: 100,
+      backspeed: 70,
+      loop: true,
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 1000,
+      once: true
+    }
+
+    );
+  </script>
+
+  <script src="script.js"></script>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    console.log(tablinks);
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    console.log(tabcontents);
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
+  <script>
+    // Function to show/hide projects based on their ID
+    function toggleProjectVisibility(projectId) {
+      var projectDivs = document.querySelectorAll('.js-project');
+      projectDivs.forEach(function (div) {
+        if (div.id === projectId || projectId === 'showAll') {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
+    }
+
+
+    // Add click event listeners to the buttons
+    var project1Button = document.getElementById("showProject1");
+    var project2Button = document.getElementById("showProject2");
+    var project3Button = document.getElementById("showProject3");
+
+    var showAllButton = document.getElementById("showAll");
+
+    project1Button.addEventListener("click", function () {
+      toggleProjectVisibility("project1");
+
+    });
+
+    project2Button.addEventListener("click", function () {
+      toggleProjectVisibility("project2");
+    });
+
+    project3Button.addEventListener("click", function () {
+      toggleProjectVisibility("project2");
+    });
+
+    showAllButton.addEventListener("click", function () {
+      toggleProjectVisibility('showAll');
+    });
+  </script>
+
+
+  <script>
+    function f1() {
+      console.log("test");
+      var rec = document.querySelectorAll('project2').value;
+      console.log(document.querySelectorAll('project2').value);
+      console.log(rec);
+      rec.style.display = 'none';
+    }
+  </script>
+
+</body>
+
+</html>
